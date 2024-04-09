@@ -11,7 +11,6 @@ def substring(words, dictionary)
         if lower_words.include?(dictionary[index])
             match_count = lower_words.scan(word).length
             result[word] = match_count
-            lower_words.slice(word)
         end
     end
 
